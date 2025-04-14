@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+    <style>
+        body{
+            background-color: #0db0bf;
+            color: #b10707;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 style="text-align: center;">ENTRY FORM</h1>
+
+    <!-- get methos used to request server to provide the data
+     post methos used to post or pload the data on server , data posted in encrpted form -->
+
+     <!-- action tells where we want to upload the data -->
+    
+     <form action="url" method="GET" accept-charset="UTF-16" autocomplete="on">
+        <label for="fullname">Enter Your Name : </label>
+        <input type="text" placeholder="Full Name" name="fullname" id="fullname"> <br/> <br/>
+
+        <label for="age">Enter Your Age : </label>
+        <input type="text" placeholder="Age" name="age" id="age"> <br/><br/>
+
+        <label for="email">Enter Your Email : </label>
+       <input type="email" placeholder="email" name="email" id="email"> <br/><br/>
+
+        <label for="email">Enter Your Address : </label>
+       <textarea name="address" id="address" rows="4" cols="12"></textarea><br/><br/>
+
+        <label for="contact no">Contact No.</label>
+        <input type="number" placeholder="contact no. " name="contact no" id="contact no."><br/><br/>
+
+    <label for="sex">Sex : </label>
+    <input type="radio" name="sex" id="male" value="male">
+    <label for="male">Male</label>
+    <input type="radio" name="sex" id="female" value="female">
+    <label for="female">Female</label> <br><br>
+    
+        <label for="country">Nationality : </label>
+        <input list="country-options" placeholder="Your country" id="country-choice" name="country-choice">
+        <datalist id="country-options">
+            <option value="Australia">
+            <option value="Austria">
+            <option value="America">
+            <option value="Nepal">
+        </datalist> <br/><br/>
+
+        <label for="lanuage">Lanuage Known : </label>
+        <input type="checkbox" name="lanuage" id="C">
+        <label for="c">C</label>
+        <input type="checkbox" name="lanuage" id="Java">
+        <label for="Java">Java</label>
+        <input type="checkbox" name="lanuage" id="C++">
+        <label for="C++">C++</label><br/><br/>
+
+        <label for="password">Enter Your password : </label>
+        <input type="password" placeholder="password" name="password" id="password"><br/><br/>
+        
+        <label for="time">Time of Subbmission : </label>
+        <input type="time" name="time" id="time"><br/><br/>
+       
+        <label for="month">Month of Application : </label>
+        <input type="month" name="month" id="month"><br/><br/>
+      
+        <label for="image">Upload image : </label>
+        <input type="file" name="image" id="image"> <br/><br/>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

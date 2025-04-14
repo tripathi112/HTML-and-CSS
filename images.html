@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn about images in HTML</title>
+    <style>
+        body{
+            background: #fff;
+            color: #941111;
+        }
+    </style>
+</head>
+<body>
+    <h1>Images in HTML</h1>
+   <img src="https://images.pexels.com/photos/31453560/pexels-photo-31453560/free-photo-of-butterfly-perched-on-spring-blossom-branch.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="500" height="700" alt="no image"> 
+   <img src="./bookandrose.webp" width="400px"  alt="no image"> 
+   <picture>
+    <source media="(min-width:550px)" srcset="./bookandrose.webp"/>
+    <source media="(min-width:850px)" srcset="./free-photo-of-traditional-japanese-stone-lanterns-in-autumn.jpeg"/>
+    <img src="./free-photo-of-traditional-japanese-stone-lanterns-in-autumn.jpeg" alt="No image">
+   </picture>
+   <!-- image map generator -->
+   <img src="bookandrose.webp" usemap="#image-map">
+
+<map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="323,758,599,552" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="" shape="0">
+</map>
+
+<script>
+    function one(){
+        alert("you clicked on one")
+    }
+    function two(){
+        alert("you clicked on two")
+    }
+</script>
+</body>
+</html>

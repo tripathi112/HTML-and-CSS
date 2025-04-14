@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Tables in HTML</title>
+    <style>
+        body{
+            background:#5ea7b8;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td{
+           border: 1px solid black;
+           padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #706e6e;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Create a Table using HTML</h1>
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Country Code</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>india@google.com</td>
+        </tr>
+        <tr>
+            <td>United States of America</td>
+            <td>USA</td>
+            <td>usa@google.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>jp</td>
+            <td>jp@google.com</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>ch</td>
+            <td>ch@google.com</td>
+        </tr>
+    </table>
+  <br/>
+        <table>
+            <colgroup>
+                <col span="2" style="background-color: #fff;">
+            </colgroup>
+            <tr>
+                <!-- colspan used to merge columns -->
+                <th colspan="2">Country</th>
+                <!-- rowspan used to merge rows -->
+                <td rowspan="2">India</td>
+                <td>China</td>
+                <td>Japan</td>
+            </tr>
+            <tr></tr>
+            <th>Code</th>
+            <td>in</td>
+            <td>ch</td>
+            <td>jp</td>
+            <tr></tr>
+            <th>Email</th>
+            <td>in@gmail.com</td>
+            <td>ch@gmail.com</td>
+            <td>jp@gmail.com</td>
+        </table>
+</body>
+</html>
